@@ -23,9 +23,9 @@ public class MainAscii {
 
         //untuk mengambil masing2 karakter dari str ::
         //dengan cara merubah string tersebut menjadi array cahr
-        char[] arrCharStr = str.toCharArray();
-        int[] multi = new int[64];
-        int[][] nilaidesimal = new int[64][64];
+        char[] arrCharStr = str.toCharArray(); // array char of string
+        int[] multi = new int[64]; // array ascii of char
+        int[][] nilaidesimal = new int[64][64]; // array desimal character
 
         int[][] nilaiokta = new int[64][16];
         int test = 0;
