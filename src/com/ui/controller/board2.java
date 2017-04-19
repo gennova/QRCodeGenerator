@@ -10,10 +10,26 @@ import javax.swing.JFrame;
 import javax.swing.*;
 import java.awt.*;
 
-public class board2 {
+public final class board2 {
 
     JFrame frame;
     JPanel squares[][] = new JPanel[8][8];
+
+    public board2(int data[]) {
+        frame = new JFrame("QR Board Library");
+        frame.setSize(200, 200);
+        frame.setLayout(new GridLayout(4, 4));
+        
+    }
+
+    public JPanel[][] getDrawPanel() {
+        squares[2][2] = new JPanel();
+        squares[0][0].setBackground(Color.white);
+        squares[0][1].setBackground(Color.black);
+        squares[1][0].setBackground(Color.white);
+        squares[1][1].setBackground(Color.black);
+        return squares;
+    }
 
     public board2() {
         frame = new JFrame("QR Board Library");
@@ -45,8 +61,8 @@ public class board2 {
             }
         }
          */
-        
 
+        frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
