@@ -24,7 +24,7 @@ public class main {
         System.out.println(Converter.getAscii(str));
         System.out.println(Arrays.toString(Converter.getAsciiArray(str)));
         System.out.println(Converter.stringToHex(str));
-        System.out.println(6%8);
+        System.out.println(2<<8);
     }
 
 }
