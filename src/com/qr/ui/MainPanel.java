@@ -25,7 +25,7 @@ public class MainPanel {
 
     public MainPanel() {
         frame = new JFrame("QR Board Library");
-        frame.setSize(700, 700);
+        frame.setSize(400, 400);
         frame.setLayout(new GridLayout(2,2));
         getPanel();
     }
@@ -67,12 +67,12 @@ public class MainPanel {
         squares[0][5] = new JPanel();
         squares[0][5].setBackground(Color.black);
         jPanel.add(squares[0][5]);
-//        squares[1][4] = new JPanel();
-//        squares[1][4].setBackground(Color.white);
-//        jPanel.add(squares[1][4]);
-//        squares[1][5] = new JPanel();
-//        squares[1][5].setBackground(Color.black);
-//        jPanel.add(squares[1][5]);
+        squares[1][4] = new JPanel();
+        squares[1][4].setBackground(Color.white);
+        jPanel.add(squares[1][4]);
+        squares[1][5] = new JPanel();
+        squares[1][5].setBackground(Color.black);
+        jPanel.add(squares[1][5]);
         /*
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
